@@ -15,11 +15,13 @@
     {% if tasks|length == 0 %}
     <p>No tasks yet</p>
     {% else %}
+
         <ul>
             {% for task in tasks %}
             <li>{{task}}</li>
             {% endfor %}
         </ul>
+        
     {% endif %}
 
 {% endblock %}
